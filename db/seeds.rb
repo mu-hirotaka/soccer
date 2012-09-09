@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Team.create(:name => "Manchester United Football Club", :league_type => 1, :reg_date => Date.today)
+

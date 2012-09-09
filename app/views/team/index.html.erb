@@ -1,0 +1,9 @@
+<h1>Team List#index</h1>
+
+<table class="teams">
+  <col class="name" />
+  <col class="reg_date" />
+  <% @teams.each do |team| %>
+    <%= render 'team', :team => team %>
+  <% end %>
+</table>
