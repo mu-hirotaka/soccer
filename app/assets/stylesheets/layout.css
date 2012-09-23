@@ -3,29 +3,56 @@ body {
 }
 
 div#wrapper {
-  width: 600px;
-  margin: 10px auto;
   background-color: #000;
-}
-
-div#header, div#footer {
-  color: #666;
-  margin: 5px;
-  padding: 5px;
-}
-
-div#header {
-  text-align: center;
-}
-
-div#footer {
-  text-align: center;
 }
 
 div#contents {
   background-color: #fff;
   color: #000;
-  margin: 5px;
-  padding: 5px;
-  border: solid 1px #ccc;
 }
+
+p, h1, ul, body {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after:  0em;
+  -webkit-margin-start:  0px;
+  -webkit-margin-end:    0px;
+}
+
+/* ヘッダーの右にメニュー */
+.header, .footer {
+  background-color: #fff;
+  background-size: 100% 100%;
+}
+
+.header ul, .footer ul {
+  display: -webkit-box;
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+
+.header ul li, .footer ul li {
+  display: list-item;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  border-right: #180f3f 1px solid;
+}
+
+.header ul li a, .footer ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header ul li a:visited, .footer ul li a:visited {
+  color: #fff;
+}
+
+.header-box-tap-link {
+  height: 40px;
+  line-height: 40px;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.0,#ac9dff),color-stop(0.1,#ad9fff),color-stop(0.5,#413481),color-stop(0.9,#7d71ff),color-stop(0.95,#ac9dff),color-stop(1,#817ccb));
+  -webkit-background-size: 1px 40px;
+  text-align: center;
+}
+
+

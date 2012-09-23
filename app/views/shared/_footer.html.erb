@@ -1,3 +1,8 @@
-<div id="footer">
-  <%= image_tag 'soccer.jpeg', :size => '131x65', :alt => 'logo' %>
-</div>
+<footer class="footer">
+  <nav>
+    <ul>
+      <li class="header-box-tap-link"><%= link_to "formations", :controller => "formations", :action => "index" %></li>
+      <li class="header-box-tap-link"><%= link_to "team", :controller => "team", :action => "index" %></li>
+    </ul>
+  </nav>
+</footer>

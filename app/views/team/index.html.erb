@@ -7,3 +7,14 @@
     <%= render 'team', :team => team %>
   <% end %>
 </table>
+
+<% if false %>
+<% form_for(@team) do |form| %>
+<ul>
+  <li><%= form.label :name %><%= form.text_field :name %></li>
+  <li><%= form.label :league_type %><%= form.text_field :league_type %></li>
+  <li><%= form.label :reg_date %><%= form.date_select :reg_date %></li>
+  <li><%= form.submit %></li>
+</ul>
+<% end %>
+<% end %>

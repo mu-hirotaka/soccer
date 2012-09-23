@@ -8,3 +8,4 @@
 
 Team.create(:name => "Manchester United Football Club", :league_type => 1, :reg_date => Date.today)
 
+Formation.create(:name => "4-4-2", :reg_date => Date.today)

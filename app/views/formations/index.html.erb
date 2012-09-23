@@ -1,0 +1,13 @@
+<h1>Formations#index</h1>
+
+<% @formations.each do |formation| %>
+  <p><%= formation.name %></p>
+<% end %>
+
+<%= form_for @formation do |form| %>
+<ul>
+  <li><%= form.label :name %><%= form.text_field :name %></li>
+  <li><%= form.label :reg_date %><%= form.date_select :reg_date %></li>
+  <li><%= form.submit %></li>
+</ul>
+<% end %>

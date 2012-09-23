@@ -1,4 +1,6 @@
 Soccer::Application.routes.draw do
+  resources :formations, :only => [ :index, :create ]
+
 #  get "team/index"
   resources :team, :only => [ :index ]
 
